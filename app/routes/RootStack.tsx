@@ -18,11 +18,11 @@ const RootStack: FC = () => {
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
         }}
       >
-        {/* <Stack.Screen
+        <Stack.Screen
           name="Auth"
           component={AuthStack}
           options={{ headerShown: false }}
-        /> */}
+        />
         <Stack.Screen
           name="Main"
           component={MainStack}
