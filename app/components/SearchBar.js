@@ -1,9 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { View, TextInput, StyleSheet } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
 import { setSearchValue } from "../redux/bookNameSlice";
-
+import Ionicons from 'react-native-vector-icons/Ionicons';
 const SearchBar = () => {
   const dispatch = useDispatch();
   const handleInput = (e) => {
@@ -19,7 +18,7 @@ const SearchBar = () => {
           placeholder="book name"
           placeholderTextColor="#0006"
         />
-        {/* <Ionicons name="search-sharp" size={24} color="white" /> */}
+        <Ionicons name="search-sharp" size={24} color="white" />
       </View>
     </View>
   );

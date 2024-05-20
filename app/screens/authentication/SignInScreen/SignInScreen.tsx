@@ -1,10 +1,8 @@
-import {View, Text, Button, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {styles} from './styles';
 import CircleGeoShape from '@assets/shared/circle-geo-shape.svg';
 import XGeoShape from '@assets/shared/X-geo-shape.svg';
-import BookMark from '@assets/welcome screen/bookmark.svg';
-import Logo from '@assets/welcome screen/undraw_books_re_8gea.svg';
 import SideGeoShapes from '@assets/shared/side-geo-shapes.svg';
 import {TextInput} from 'react-native-gesture-handler';
 type Props = {};
@@ -31,6 +29,7 @@ const SignInScreen = (props: Props) => {
         />
       </View>
       <TouchableOpacity
+        onPress={() => props?.navigation.navigate('Main')}
         style={styles.button}>
         <Text style={styles.btnTxt}>Submit</Text>
       </TouchableOpacity>
