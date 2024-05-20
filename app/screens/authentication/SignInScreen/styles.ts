@@ -47,4 +47,14 @@ export const styles = StyleSheet.create({
     borderRadius: 20,
     textAlign: "center",
   },
+  button: {
+    width: '40%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'skyblue',
+    borderRadius: 10,
+    alignSelf: 'center',
+    marginTop: 30
+  },
+  btnTxt: {color: 'white', paddingHorizontal: 8, paddingVertical: 12}
 });

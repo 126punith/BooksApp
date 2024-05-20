@@ -31,16 +31,8 @@ const SignInScreen = (props: Props) => {
         />
       </View>
       <TouchableOpacity
-        style={{
-          width: '40%',
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: 'skyblue',
-          borderRadius: 10,
-          alignSelf: 'center',
-          marginTop: 30
-        }}>
-        <Text style={{color: 'white', paddingHorizontal: 8, paddingVertical: 12}}>Submit</Text>
+        style={styles.button}>
+        <Text style={styles.btnTxt}>Submit</Text>
       </TouchableOpacity>
       <SideGeoShapes style={styles.sideGeoShapes} />
     </View>
